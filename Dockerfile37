@@ -4,7 +4,9 @@ ARG CDV=100.0.4896.60
 
 RUN sed -i 's/deb.debian.org/ftp.cn.debian.org/g' /etc/apt/sources.list
 
-RUN apt-get -y update && apt-get install -y \
+RUN apt-get -y update && \
+    apt-get install libcurl4-openssl-dev --fix-broken && \ 
+    apt-get install -y \
     fonts-liberation \
     libappindicator3-1 \
     libasound2 \
@@ -28,7 +30,6 @@ RUN apt-get -y update && apt-get install -y \
     lsb-release \
     unzip \
     wget \
-    libcurl4-gnutls-dev \
     xdg-utils \
     libcurl3-gnutls \
     libcurl3-nss \
