@@ -28,6 +28,7 @@ RUN apt-get -y update && apt-get install -y \
     lsb-release \
     unzip \
     wget \
+    libcurl4-gnutls-dev \
     xdg-utils \
     libcurl3-gnutls \
     libcurl3-nss \
