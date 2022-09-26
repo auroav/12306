@@ -82,8 +82,8 @@ HTTP_TYPE = "http"
 EMAIL_CONF = {
     "IS_MAIL": True,
     "email": "1617834622@qq.com",
-    "notice_email_list": "1617834622@qq.com",
-    "username": "1617834622@qq.com",
+    "notice_email_list": "xieming986@gmail.com",
+    "username": "1617834622",
     "password": "lmgxvepswxuufaeb",
     "host": "smtp.qq.com",
 }
